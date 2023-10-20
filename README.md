@@ -3,25 +3,26 @@ Este código é um exemplo de um programa para o ESP32, que se conecta a uma red
 
 <h2>Resumo do Código</h2>
 O código consiste em um conjunto de funções e configurações para realizar as seguintes tarefas:
-<br></br>
 Inicialização das conexões Wi-Fi, MQTT e configuração dos tópicos MQTT.
-Leitura de sensores:
+
+<h3>Leitura de sensores:</h3>
 <li>Sensor DHT11 para umidade e temperatura.</li>
 <li>Sensor de luminosidade.</li>
 <li>Publicação dos dados dos sensores nos tópicos MQTT apropriados.</li>
 <li>Controle de um LED e exibição de informações em um display LCD.</li>
 <li>Função de callback para lidar com comandos recebidos via MQTT.</li>
-<br></br>
+
 <h2>Pré-requisitos:</h2>
 As seguintes bibliotecas estejam instaladas:
 <li>"WiFi.h": Para a conexão Wi-Fi.</li>
 <li>"PubSubClient.h": Para a comunicação MQTT.</li>
 <li>"DHT.h": Para a leitura do sensor DHT11.</li>
 <li>"Wire.h" e "LiquidCrystal_I2C.h": Para o controle do display LCD.</li>
-<br></br>
+
 <h2>Para acessar o MQTT Mobile</h2>
 BROKER = 46.17.108.113
 BROKER_PORT = 1883
+
 <h2>Para configurar os tópicos MQTT para publicação e subscrição:</h2>
 (sem as "aspas")
 <li>"/TEF/lamp115/cmd"</li>
